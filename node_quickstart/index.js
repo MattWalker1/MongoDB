@@ -1,4 +1,5 @@
 // mongodb+srv://Mattwalker1:alibaba@cluster0.zgeee.mongodb.net/?retryWrites=true&w=majority
+// git hash first commit - 9e893ca967dbd04e1e52cdec43dbad18ac1b5bf7
 
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your MongoDB deployment's connection string.
@@ -19,3 +20,12 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+
+
+
+
+//trump trump trump 
+//trump trump trump 
+//trump trump trump 
+//trump trump trump 
