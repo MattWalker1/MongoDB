@@ -1,20 +1,14 @@
 // mongodb+srv://Mattwalker1:alibaba@cluster0.zgeee.mongodb.net/?retryWrites=true&w=majority
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your MongoDB deployment's connection string.
-const uri = "mongodb+srv://Mattwalker1:*******@Cluster0.zgeee.mongodb.net/?retryWrites=true&w=majority";
+//const uri = "mongodb+srv://Mattwalker1:alibaba@Cluster0.zgeee.mongodb.net/?retryWrites=true&w=majority";
+const { mongoose } = require ("mongoose");
+{ mongoose } connect("mongodb+srv://Mattwalker1:alibaba@Cluster0.zgeee.mongodb.net/?retryWrites=true&w=majority");
 const client = new MongoClient(uri);
+
+run()
 async function run() {
-  try {
-    await client.connect();
-    const database = client.db('sample_mflix');
-    const movies = database.collection('movies');
-    // Query for a movie that has the title 'Back to the Future'
-    const query = { title: 'Titanic'  };
-    const movie = await movies.findOne(query);
-    console.log(movie);
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
-  }
+const user = new user({ name: "kyle", age: 26})
+  await user.save() 
+  (console.log(user));
 }
-run().catch(console.dir);
